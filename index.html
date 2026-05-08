@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/addons/p5.sound.min.js"></script>
+    
+    
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+      <h1>Título</h1>
+      <p id="msg"></p>
+      
+      <button onclick ="clicar()" id ="click">Clique Aqui!</button>
+    </main>
+    <script>
+      function clicar(){
+        document.querySelector('#click').textContent = "Clicado";
+        document.querySelector('#msg').textContent = "Não importa o quão devagar você vá, desde que não pare."; 
+      }
+    </script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
